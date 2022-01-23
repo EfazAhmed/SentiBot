@@ -11,18 +11,22 @@ class Form extends Component {
         }
     }
 
-    handleTextChange = (event) => {
+    handleTextChange = event => {
         this.setState(
             {
                 text: event.target.value
             }
         )
     }
+
+    handleSubmit = event => {
+        alert(`${this.state.text}`)
+    }
     
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <div>
                         <textarea
                             type='text' 

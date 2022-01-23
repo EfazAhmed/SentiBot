@@ -61,6 +61,15 @@ body {
 
 .MainContentClass button {
     font-size: 20px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: #2A3439;
+    border: None;
+    text-decoration: None;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
