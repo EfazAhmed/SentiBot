@@ -29,8 +29,10 @@ class Form extends Component {
                             value={this.state.username} 
                             onChange={this.handleTextChange}
                             rows={2}
-                            cols={35}            
+                            cols={window.innerWidth/40}            
                         />
+                        <br></br>
+                        <button type="submit">Analyze</button>
                     </div> 
                 </form>
             </div>

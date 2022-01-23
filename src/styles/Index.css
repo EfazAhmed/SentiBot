@@ -27,31 +27,42 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
+    overflow: hidden;
 }
 
 .MainContentClass {
     background-color: white;
+    text-align: center;
 }
 
 .MainContentClass p {
     display: inline-block;
     position: relative;
-    text-align: left;
-    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
     font-weight: bold;
     min-width: 800px;
+    width: 1000px;
+    color: #2A3439;
+    padding: 100px;
 }
 
-Form {
+.MainContentClass Form {
     text-align: center;
-    padding: 20% 0px;
+    padding: 0px 0px;
 }
 
-textarea {
+.MainContentClass textarea {
     resize: vertical;
     max-height: 145px;
+    min-height: 35px;
     font-size: 30px;
 }
+
+.MainContentClass button {
+    font-size: 20px;
+}
+
 
 
 
