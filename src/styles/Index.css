@@ -49,7 +49,9 @@ body {
 
 .MainContentClass Form {
     text-align: center;
+    position: relative;
     padding: 0px 0px;
+    min-width: 1200px;
 }
 
 .MainContentClass textarea {
