@@ -20,7 +20,12 @@ class Form extends Component {
     }
 
     handleSubmit = event => {
-        alert(`${this.state.text}`)
+        if(this.state.text == '') {
+            alert("There is no text to analyze.")
+        }
+        else {
+            alert(`${this.state.text}`)
+        }
     }
     
     render() {

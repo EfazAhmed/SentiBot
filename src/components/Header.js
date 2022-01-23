@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import '../styles/Index.css'
 
 const Header = (props) => {

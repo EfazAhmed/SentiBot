@@ -1,15 +1,21 @@
 import React from "react";
-import Header from './components/Header'
 import './styles/Index.css'
-import MainContent from "./components/MainContent";
+import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import Home from "./components/pages/Home";
+import Report from "./components/pages/Report";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header title="SentiBot"/>
-        <MainContent />
-      </div>
+      <Router>
+        <Routes>
+
+          <Route path="/" element={<Home/>} />
+
+          <Route path="*" element={<div>404 Not Found</div>} />
+
+        </Routes>
+      </Router>
     )
   }
 }
