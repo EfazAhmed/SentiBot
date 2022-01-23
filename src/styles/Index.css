@@ -1,0 +1,33 @@
+header {
+    background-color: #2A3439;
+    height: 80px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    top: 0;
+    left: 20px;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+}
+  
+
+  
