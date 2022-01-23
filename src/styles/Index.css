@@ -28,6 +28,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
 }
+
+.MainContentClass {
+    background-color: white;
+}
+
+.MainContentClass p {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 800px;
+}
+
+Form {
+    text-align: center;
+    padding: 20% 0px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 145px;
+    font-size: 30px;
+}
+
+
+
   
 
   

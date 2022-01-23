@@ -1,14 +1,14 @@
 import React from "react";
 import Header from './components/Header'
 import './styles/Index.css'
-import Form from "./components/Form";
+import MainContent from "./components/MainContent";
 
 class App extends React.Component {
   render() {
     return (
       <div>
         <Header title="SentiBot"/>
-        <Form />
+        <MainContent />
       </div>
     )
   }
