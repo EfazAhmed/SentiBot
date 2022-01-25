@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import Header from '../Header';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-export class Report extends Component {
-    render() {
-        return (
-            <div>
-              <Header title="SentiBot"/>
-              <h1>Heodfhnldhnlrsdjhrid</h1>
-            </div>
-        )
-    }
+const Report = (props) => {
+
+    const { state } = useLocation();
+
+    return (
+        <div>
+          <h1>{state}</h1>
+        </div>
+    )
 }
 
 export default Report;

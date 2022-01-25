@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../Header';
 import MainContent from '../MainContent';
 import './../../styles/Index.css'
 
-class Home extends Component {
-  render() {
-    return (
-        <div>
-          <Header title="SentiBot"/>
-          <MainContent />
-        </div>
-    )
-  }
+
+const Home = () => {
+  return (
+    <div>
+      <MainContent />
+    </div>
+  )
 }
 
 export default Home;

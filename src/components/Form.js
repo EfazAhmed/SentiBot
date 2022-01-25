@@ -1,52 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './../styles/Index.css'
 
-class Form extends Component {
-
-    constructor(props) {
-        super(props)
-        
-            this.state = {
-                text: ''
-        }
-    }
-
-    handleTextChange = event => {
-        this.setState(
-            {
-                text: event.target.value
-            }
-        )
-    }
-
-    handleSubmit = event => {
-        if(this.state.text == '') {
+const Form = () => {
+    const navigate = useNavigate();
+    const [text, setText] = useState("");
+    const handleSubmit = () => {
+        if(text == '') {
             alert("There is no text to analyze.")
         }
         else {
-            alert(`${this.state.text}`)
+            // alert(`${text}`)
+            navigate('report', 
+                { state: text , replace: true})
         }
     }
+
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <textarea
+                        type='text' 
+                        value={text} 
+                        onChange={event => setText(event.target.value)}
+                        rows={2}
+                        cols={window.innerWidth/40}            
+                    />
+                    <br></br>
+                    <button type="submit">Analyze</button>
+                </div> 
+            </form>
+        </div>
+    )
     
-    render() {
-        return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <textarea
-                            type='text' 
-                            value={this.state.username} 
-                            onChange={this.handleTextChange}
-                            rows={2}
-                            cols={window.innerWidth/40}            
-                        />
-                        <br></br>
-                        <button type="submit">Analyze</button>
-                    </div> 
-                </form>
-            </div>
-        )
-    }
 }
 
-export default Form;
+export default Form
