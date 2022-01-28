@@ -27,7 +27,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
-    overflow: hidden;
 }
 
 .MainContentClass {
@@ -75,6 +74,68 @@ body {
     margin-top: 10px;
 }
 
+.DashboardBody {
+    background-color: pink;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+}
+
+.DashboardClass {
+    display: grid;
+    position: relative;
+    background-color: green;
+    width: 1000px;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.TextModule {
+    background-color: white;
+    width: 540px;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: scroll;
+}
+
+.TextModule p {
+    margin: 0;
+    padding: 0;
+}
+
+.CorrectionModule {
+    background-color: orange;
+    display: inline-block;
+    grid-column-start: 2;
+    width: 450px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.VerdictModule {
+    background-color: purple;
+    display: inline-block;
+    grid-column: 1 / span 2;
+    width: 1000px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.GraphModule {
+    background-color: red;
+    display: inline-block;
+    grid-column: 1 / span 2;
+    width: 1000px;
+    height: 510px;
+    border-radius: 5px;
+}
 
 
 

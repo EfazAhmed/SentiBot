@@ -1,14 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
+import '../../styles/Index.css'
 
-const Report = (props) => {
+const Report = () => {
 
     const { state } = useLocation();
 
     return (
-        <div>
-          <h1>{state}</h1>
+        <div className="DashboardBody">
+            <div className="DashboardClass">
+
+                <div className="TextModule">
+                    
+                    <p>{state}</p>
+                    
+                </div>
+
+                <div className="CorrectionModule">
+
+                </div>
+
+                <div className="VerdictModule">
+                </div>
+
+                <div className="GraphModule">
+                </div>
+
+            </div>
         </div>
+        
     )
 }
 
